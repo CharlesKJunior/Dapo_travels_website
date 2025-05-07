@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Dapo Travels - Premium Travel Services in Kampala</title>
+  <meta name="description" content="Learn about Dapo Travels - your trusted partner for premium chauffeur services, airport transfers, and upcountry trips in Uganda.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-['Poppins'] bg-gray-50">
+  <!-- ===== HEADER START ===== -->
+  <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="logo">
+        <a href="index.html" class="text-2xl font-bold text-indigo-600 flex items-center">
+          <i class="fas fa-car-side mr-2"></i> Dapo<span class="text-amber-500">Travels</span>
+        </a>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="index.html" class="nav-link hover:text-indigo-600 transition">Home</a></li>
+          <li><a href="services.html" class="nav-link hover:text-indigo-600 transition">Services</a></li>
+          <li><a href="about.html" class="nav-link active font-medium text-indigo-600">About Us</a></li>
+          <li><a href="contact.html" class="nav-link hover:text-indigo-600 transition">Contact</a></li>
+          <li><a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full transition shadow-md">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="md:hidden text-2xl text-gray-700 menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden bg-white w-full py-4 px-4 shadow-lg" id="mobileMenu">
+      <ul class="flex flex-col space-y-4">
+        <li><a href="index.html" class="block py-2 hover:text-indigo-600 transition">Home</a></li>
+        <li><a href="services.html" class="block py-2 hover:text-indigo-600 transition">Services</a></li>
+        <li><a href="about.html" class="block py-2 text-indigo-600 font-medium">About Us</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-indigo-600 transition">Contact</a></li>
+        <li><a href="#" class="block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-center transition mt-2">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ===== HEADER END ===== -->
+
+  <!-- ===== ABOUT HERO SECTION ===== -->
+  <section class="relative pt-24 pb-16 md:pt-32 md:pb-24">
+    <div class="absolute inset-0 overflow-hidden">
+      <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+           alt="Dapo Travels team" 
+           class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/80 to-indigo-500/60"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-3xl text-white text-center mx-auto" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          About <span class="text-amber-400">Dapo Travels</span>
+        </h1>
+        <p class="text-lg md:text-xl mb-8 opacity-90">
+          Your trusted partner for premium travel services in Uganda
+        </p>
+        <a href="#our-story" class="inline-flex items-center bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium transition shadow-lg transform hover:scale-105">
+          Our Story <i class="fas fa-arrow-down ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR STORY SECTION ===== -->
+  <section id="our-story" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+               alt="Dapo Travels founder" 
+               class="rounded-xl shadow-xl w-full">
+        </div>
+        
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our <span class="text-indigo-600">Journey</span></h2>
+          <p class="text-gray-600 mb-6">Founded in 2015, Dapo Travels began as a small fleet of vehicles serving corporate clients in Kampala. Our founder, David Apollo, recognized the need for reliable, professional transportation services that combined luxury with affordability.</p>
+          <p class="text-gray-600 mb-6">What started as a modest operation with just three vehicles has grown into one of Kampala's most trusted travel service providers. Today, we operate a modern fleet of over 50 vehicles and serve hundreds of satisfied clients monthly.</p>
+          <p class="text-gray-600 mb-8">Our success stems from an unwavering commitment to customer satisfaction, safety, and continuous improvement. We've maintained our core values while adapting to the evolving needs of our clients in Uganda's dynamic transportation landscape.</p>
+          <div class="bg-indigo-50 rounded-lg p-6 border-l-4 border-indigo-600">
+            <p class="text-gray-700 italic">"Our mission is simple: to provide exceptional travel experiences that exceed expectations, one journey at a time."</p>
+            <p class="text-indigo-600 font-medium mt-4">— David Apollo, Founder & CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION & VISION SECTION ===== -->
+  <section class="py-16 md:py-24 bg-indigo-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-indigo-600">Core</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-600">The principles that guide everything we do</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Mission -->
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6 text-indigo-600">
+            <i class="fas fa-bullseye text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+          <p class="text-gray-600">To provide reliable, comfortable, and professional transportation services that enhance our clients' mobility and contribute to their success. We strive to set the standard for excellence in Uganda's travel industry through innovation, integrity, and exceptional service.</p>
+        </div>
+        
+        <!-- Vision -->
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6 text-indigo-600">
+            <i class="fas fa-eye text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+          <p class="text-gray-600">To be Uganda's most trusted and preferred travel service provider, recognized for our commitment to quality, safety, and customer satisfaction. We aim to expand our footprint across East Africa while maintaining the personal touch that has defined our success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUES SECTION ===== -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-amber-500">Values</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-600">The foundation of our company culture and service delivery</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Value 1 -->
+        <div class="bg-gray-50 rounded-xl p-8 text-center hover:bg-indigo-50 transition" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
+            <i class="fas fa-shield-alt text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Safety First</h3>
+          <p class="text-gray-600">We prioritize the safety of our clients and staff above all else, with rigorous vehicle maintenance and driver training programs.</p>
+        </div>
+        
+        <!-- Value 2 -->
+        <div class="bg-gray-50 rounded-xl p-8 text-center hover:bg-indigo-50 transition" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
+            <i class="fas fa-hand-holding-heart text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Customer Focus</h3>
+          <p class="text-gray-600">Every decision we make is guided by what's best for our clients. Your satisfaction is our ultimate measure of success.</p>
+        </div>
+        
+        <!-- Value 3 -->
+        <div class="bg-gray-50 rounded-xl p-8 text-center hover:bg-indigo-50 transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
+            <i class="fas fa-gem text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Integrity</h3>
+          <p class="text-gray-600">We conduct our business with honesty, transparency, and ethical practices, building trust with every interaction.</p>
+        </div>
+        
+        <!-- Value 4 -->
+        <div class="bg-gray-50 rounded-xl p-8 text-center hover:bg-indigo-50 transition" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6 text-indigo-600">
+            <i class="fas fa-lightbulb text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Innovation</h3>
+          <p class="text-gray-600">We continuously seek better ways to serve our clients, embracing technology and creative solutions to enhance your experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM SECTION ===== -->
+  <section class="py-16 md:py-24 bg-indigo-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Our <span class="text-indigo-600">Team</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-600">The dedicated professionals behind your exceptional travel experiences</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+               alt="David Apollo" 
+               class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-1">David Apollo</h3>
+            <p class="text-indigo-600 font-medium mb-3">Founder & CEO</p>
+            <p class="text-gray-600 text-sm">With 15+ years in the transportation industry, David's vision drives our company forward.</p>
+            <div class="flex space-x-3 mt-4">
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+               alt="Sarah Nalwoga" 
+               class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-1">Sarah Nalwoga</h3>
+            <p class="text-indigo-600 font-medium mb-3">Operations Director</p>
+            <p class="text-gray-600 text-sm">Sarah ensures our services run smoothly with her exceptional organizational skills.</p>
+            <div class="flex space-x-3 mt-4">
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" 
+               alt="James Mugisha" 
+               class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-1">James Mugisha</h3>
+            <p class="text-indigo-600 font-medium mb-3">Head of Fleet</p>
+            <p class="text-gray-600 text-sm">James maintains our vehicles to the highest standards of safety and comfort.</p>
+            <div class="flex space-x-3 mt-4">
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+               alt="Grace Nakimera" 
+               class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-1">Grace Nakimera</h3>
+            <p class="text-indigo-600 font-medium mb-3">Customer Experience</p>
+            <p class="text-gray-600 text-sm">Grace leads our customer service team with warmth and professionalism.</p>
+            <div class="flex space-x-3 mt-4">
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-indigo-600 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="contact.html" class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-medium transition shadow-lg transform hover:scale-105">
+          Contact Our Team <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="py-16 md:py-24 bg-indigo-600 text-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-4xl md:text-5xl font-bold mb-2">10+</div>
+          <div class="text-lg opacity-90">Years Experience</div>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+          <div class="text-lg opacity-90">Happy Clients</div>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-4xl md:text-5xl font-bold mb-2">50+</div>
+          <div class="text-lg opacity-90">Fleet Vehicles</div>
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+          <div class="text-lg opacity-90">Service Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Ready to Experience <span class="text-indigo-600">Dapo Travels</span>?</h2>
+        <p class="text-xl text-gray-600 mb-8">Join our growing list of satisfied clients who trust us for their transportation needs.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="services.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-medium transition shadow-lg transform hover:scale-105">
+            Our Services <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="contact.html" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-full text-lg font-medium transition shadow-lg transform hover:scale-105">
+            Contact Us <i class="fas fa-phone-alt ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 flex items-center">
+            <i class="fas fa-car-side mr-2 text-indigo-400"></i> Dapo<span class="text-amber-400">Travels</span>
+          </h3>
+          <p class="mb-4 opacity-80">Premium travel and chauffeur services in Kampala, offering comfort, reliability, and luxury for all your transportation needs.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-indigo-600 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="opacity-80 hover:text-amber-400 transition">Home</a></li>
+            <li><a href="services.html" class="opacity-80 hover:text-amber-400 transition">Services</a></li>
+            <li><a href="about.html" class="opacity-80 hover:text-amber-400 transition">About Us</a></li>
+            <li><a href="contact.html" class="opacity-80 hover:text-amber-400 transition">Contact</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">FAQ</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Our Services</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Chauffeur Services</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Upcountry Trips</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Airport Transfers</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Special Hires</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Corporate Travel</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">City Tours</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-amber-400 mt-1 mr-3"></i>
+              <span class="opacity-80">Plot 12, Kampala Road<br>Kampala, Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt text-amber-400 mr-3"></i>
+              <span class="opacity-80">+256 700 123456</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-amber-400 mr-3"></i>
+              <span class="opacity-80">info@dapotravels.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-clock text-amber-400 mr-3"></i>
+              <span class="opacity-80">24/7 Service</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="mb-4 md:mb-0 opacity-80">&copy; 2025 Dapo Travels. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Privacy Policy</a>
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Terms of Service</a>
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 text-white rounded-full shadow-lg flex items-center justify-center transition opacity-0 invisible hover:bg-indigo-700">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

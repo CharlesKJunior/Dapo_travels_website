@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dapo Travels - Premium Travel Services in Kampala</title>
+  <meta name="description" content="Experience luxury travel and chauffeur services in Kampala with Dapo Travels. Reliable airport transfers, upcountry trips, and special hires.">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="font-['Poppins'] bg-gray-50">
+  <!-- ===== HEADER START ===== -->
+  <header class="fixed w-full z-50 transition-all duration-300 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="logo">
+        <a href="#" class="text-2xl font-bold text-indigo-600 flex items-center">
+          <i class="fas fa-car-side mr-2"></i> Dapo<span class="text-amber-500">Travels</span>
+        </a>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8">
+          <li><a href="#" class="nav-link active font-medium text-indigo-600">Home</a></li>
+          <li><a href="services.html" class="nav-link hover:text-indigo-600 transition">Services</a></li>
+          <li><a href="about.html" class="nav-link hover:text-indigo-600 transition">About Us</a></li>
+          <li><a href="contact.html" class="nav-link hover:text-indigo-600 transition">Contact</a></li>
+          <li><a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full transition shadow-md">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="md:hidden text-2xl text-gray-700 menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden bg-white w-full py-4 px-4 shadow-lg" id="mobileMenu">
+      <ul class="flex flex-col space-y-4">
+        <li><a href="#" class="block py-2 text-indigo-600 font-medium">Home</a></li>
+        <li><a href="services.html" class="block py-2 hover:text-indigo-600 transition">Services</a></li>
+        <li><a href="about.html" class="block py-2 hover:text-indigo-600 transition">About Us</a></li>
+        <li><a href="contact.html" class="block py-2 hover:text-indigo-600 transition">Contact</a></li>
+        <li><a href="#" class="block bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-center transition mt-2">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ===== HEADER END ===== -->
+
+  <!-- ===== HERO SECTION START ===== -->
+  <section class="relative pt-24 pb-16 md:pt-32 md:pb-24 lg:pb-32">
+    <div class="absolute inset-0 overflow-hidden">
+      <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+           alt="Luxury car on road" 
+           class="w-full h-full object-cover object-center">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/80 to-indigo-500/60"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-2xl text-white" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          Premium <span class="text-amber-400">Travel</span> Services in Kampala
+        </h1>
+        <p class="text-lg md:text-xl mb-8 opacity-90">
+          Experience the ultimate in comfort and reliability with our luxury chauffeur services, airport transfers, and upcountry trips.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full text-center font-medium transition shadow-lg transform hover:scale-105">
+            Book Your Ride <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="#services" class="bg-white hover:bg-gray-100 text-indigo-700 px-8 py-3 rounded-full text-center font-medium transition shadow-lg transform hover:scale-105">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Stats Bar -->
+    <div class="container mx-auto px-4 mt-12 md:mt-20 relative z-10">
+      <div class="bg-white rounded-xl shadow-2xl p-6 grid grid-cols-2 md:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">10+</div>
+          <div class="text-gray-600">Years Experience</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">500+</div>
+          <div class="text-gray-600">Happy Clients</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">50+</div>
+          <div class="text-gray-600">Fleet Vehicles</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">24/7</div>
+          <div class="text-gray-600">Customer Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== HERO SECTION END ===== -->
+
+  <!-- ===== SERVICES SECTION START ===== -->
+  <section id="services" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-indigo-600">Services</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-600">Premium travel solutions tailored to your needs, ensuring comfort, safety, and reliability.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="100">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Airport Pickup" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600">
+              <i class="fas fa-plane-arrival text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Airport Transfers</h3>
+            <p class="text-gray-600 mb-4">Timely, hassle-free airport pickups and drop-offs with flight tracking.</p>
+            <a href="#" class="text-indigo-600 font-medium flex items-center group">
+              Learn more <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="200">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/2516687/pexels-photo-2516687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Upcountry Trip" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600">
+              <i class="fas fa-road text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Upcountry Trips</h3>
+            <p class="text-gray-600 mb-4">Comfortable long-distance travel to all major Ugandan destinations.</p>
+            <a href="#" class="text-indigo-600 font-medium flex items-center group">
+              Learn more <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="300">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Special Hires" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600">
+              <i class="fas fa-calendar-star text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Special Hires</h3>
+            <p class="text-gray-600 mb-4">Luxury vehicles for weddings, corporate events, and special occasions.</p>
+            <a href="#" class="text-indigo-600 font-medium flex items-center group">
+              Learn more <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group" data-aos="fade-up" data-aos-delay="400">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/1149170/pexels-photo-1149170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Chauffeur Services" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600">
+              <i class="fas fa-user-tie text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Chauffeur Services</h3>
+            <p class="text-gray-600 mb-4">Professional drivers for business meetings, city tours, and daily commutes.</p>
+            <a href="#" class="text-indigo-600 font-medium flex items-center group">
+              Learn more <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== SERVICES SECTION END ===== -->
+
+  <!-- ===== DEALS SECTION START ===== -->
+  <section class="py-16 md:py-24 bg-indigo-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hot <span class="text-amber-500">Deals</span></h2>
+        <p class="max-w-2xl mx-auto text-gray-600">Limited-time offers to make your travel even more special.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Deal 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Road Trip Package" 
+                 class="w-full h-48 object-cover">
+            <div class="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-bold">20% OFF</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-gray-800">Road Trip Package</h3>
+              <div class="text-indigo-600 font-bold">From $120</div>
+            </div>
+            <p class="text-gray-600 mb-4">Save on your next group trip around Uganda's scenic routes.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="text-gray-600 ml-2 text-sm">4.8 (24)</span>
+              </div>
+              <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Deal 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Kampala City Tour" 
+                 class="w-full h-48 object-cover">
+            <div class="absolute top-4 right-4 bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-bold">POPULAR</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-gray-800">Kampala City Tour</h3>
+              <div class="text-indigo-600 font-bold">From $75</div>
+            </div>
+            <p class="text-gray-600 mb-4">Discover the city's vibrant life and culture at a special rate.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="text-gray-600 ml-2 text-sm">5.0 (32)</span>
+              </div>
+              <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Deal 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/241866/pexels-photo-241866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Safari Adventure" 
+                 class="w-full h-48 object-cover">
+            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">NEW</div>
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-gray-800">Safari Adventure</h3>
+              <div class="text-indigo-600 font-bold">From $250</div>
+            </div>
+            <p class="text-gray-600 mb-4">Plan your ultimate safari and enjoy extra perks with our partners.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span class="text-gray-600 ml-2 text-sm">4.2 (18)</span>
+              </div>
+              <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-full text-sm font-medium transition">
+                Book Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="#" class="inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800 transition">
+          View all deals <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===== DEALS SECTION END ===== -->
+
+  <!-- ===== WHY CHOOSE US SECTION START ===== -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2" data-aos="fade-right">
+          <img src="https://images.pexels.com/photos/3807697/pexels-photo-3807697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+               alt="Professional chauffeur" 
+               class="rounded-xl shadow-xl w-full">
+        </div>
+        
+        <div class="lg:w-1/2" data-aos="fade-left">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose <span class="text-indigo-600">Dapo Travels</span></h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4 text-indigo-600">
+                <i class="fas fa-shield-alt text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Safety First</h3>
+                <p class="text-gray-600">Our vehicles undergo regular maintenance and our drivers are rigorously trained in defensive driving techniques.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4 text-indigo-600">
+                <i class="fas fa-clock text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Punctuality Guaranteed</h3>
+                <p class="text-gray-600">We monitor flights in real-time and adjust pickup times accordingly, ensuring you're never left waiting.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4 text-indigo-600">
+                <i class="fas fa-headset text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">24/7 Support</h3>
+                <p class="text-gray-600">Our customer service team is available round the clock to assist with bookings, changes, or any inquiries.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-indigo-100 rounded-full p-3 mr-4 text-indigo-600">
+                <i class="fas fa-car text-xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Modern Fleet</h3>
+                <p class="text-gray-600">Choose from our selection of luxury sedans, SUVs, and vans, all equipped with premium amenities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== WHY CHOOSE US SECTION END ===== -->
+
+  <!-- ===== TESTIMONIALS SECTION START ===== -->
+  <section class="py-16 md:py-24 bg-indigo-600 text-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our <span class="text-amber-300">Clients</span> Say</h2>
+        <p class="max-w-2xl mx-auto opacity-90">Don't just take our word for it - hear from our satisfied customers.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center text-amber-300 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="text-sm opacity-80">2 weeks ago</span>
+          </div>
+          <p class="mb-6 italic opacity-90">"The airport pickup service was flawless. The driver was waiting with a sign when I arrived, helped with my luggage, and got me to my hotel quickly. Will definitely use Dapo Travels again!"</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah K." class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Sarah K.</h4>
+              <p class="text-sm opacity-80">Business Traveler</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center text-amber-300 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="text-sm opacity-80">1 month ago</span>
+          </div>
+          <p class="mb-6 italic opacity-90">"We used Dapo Travels for our wedding transportation and couldn't be happier. The cars were immaculate, drivers professional, and they arrived exactly on time. Made our special day stress-free!"</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David & Amina" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">David & Amina</h4>
+              <p class="text-sm opacity-80">Wedding Clients</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-center mb-4">
+            <div class="flex items-center text-amber-300 mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="text-sm opacity-80">3 days ago</span>
+          </div>
+          <p class="mb-6 italic opacity-90">"The upcountry trip to Mbarara was comfortable and safe. The driver knew all the best rest stops and got us there ahead of schedule. Highly recommend for long-distance travel in Uganda."</p>
+          <div class="flex items-center">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Grace M." class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Grace M.</h4>
+              <p class="text-sm opacity-80">Family Traveler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== TESTIMONIALS SECTION END ===== -->
+
+  <!-- ===== CTA SECTION START ===== -->
+  <section class="py-16 md:py-24 bg-gradient-to-r from-indigo-600 to-indigo-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for Your Next <span class="text-amber-300">Journey</span>?</h2>
+        <p class="text-xl mb-8 opacity-90">Book your ride now and experience the Dapo Travels difference.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-medium transition shadow-lg transform hover:scale-105">
+            <i class="fas fa-phone-alt mr-2"></i> Call: +256 700 123456
+          </a>
+          <a href="#" class="bg-white hover:bg-gray-100 text-indigo-700 px-8 py-4 rounded-full text-lg font-medium transition shadow-lg transform hover:scale-105">
+            <i class="fas fa-envelope mr-2"></i> Email Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CTA SECTION END ===== -->
+
+  <!-- ===== FOOTER START ===== -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 flex items-center">
+            <i class="fas fa-car-side mr-2 text-indigo-400"></i> Dapo<span class="text-amber-400">Travels</span>
+          </h3>
+          <p class="mb-4 opacity-80">Premium travel and chauffeur services in Kampala, offering comfort, reliability, and luxury for all your transportation needs.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-indigo-600 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Home</a></li>
+            <li><a href="services.html" class="opacity-80 hover:text-amber-400 transition">Services</a></li>
+            <li><a href="about.html" class="opacity-80 hover:text-amber-400 transition">About Us</a></li>
+            <li><a href="contact.html" class="opacity-80 hover:text-amber-400 transition">Contact</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">FAQ</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Our Services</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Airport Transfers</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Upcountry Trips</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Special Hires</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Chauffeur Services</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">Corporate Travel</a></li>
+            <li><a href="#" class="opacity-80 hover:text-amber-400 transition">City Tours</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt text-amber-400 mt-1 mr-3"></i>
+              <span class="opacity-80">Plot 12, Kampala Road<br>Kampala, Uganda</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt text-amber-400 mr-3"></i>
+              <span class="opacity-80">+256 700 123456</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope text-amber-400 mr-3"></i>
+              <span class="opacity-80">info@dapotravels.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-clock text-amber-400 mr-3"></i>
+              <span class="opacity-80">24/7 Service</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="mb-4 md:mb-0 opacity-80">&copy; 2025 Dapo Travels. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Privacy Policy</a>
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Terms of Service</a>
+          <a href="#" class="opacity-80 hover:text-amber-400 transition">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== FOOTER END ===== -->
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-indigo-600 text-white rounded-full shadow-lg flex items-center justify-center transition opacity-0 invisible hover:bg-indigo-700">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
